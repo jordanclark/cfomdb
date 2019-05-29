@@ -1,0 +1,39 @@
+{
+    "name":"cfomdb",
+    "slug":"cfomdb",
+    "version":"0.5.0",
+    "author":"Jordan Clark <jordanclark@gmail.com>",
+    "keywords":[
+        "omdb",
+        "imdb",
+        "movies",
+        "api",
+        "rest"
+    ],
+    "shortDescription":"API client for omdbapi.com",
+    "type":"modules",
+    "location":"jordanclark/cfomdb#v0.5.0",
+    "repository":{
+        "URL":"https://github.com/jordanclark/cfomdb.git",
+        "type":"GIT"
+    },
+    "homepage":"https://github.com/jordanclark/cfomdb",
+    "bugs":"https://github.com/jordanclark/cfomdb/issues",
+    "license":[
+        {
+            "type":"Apache-2.0",
+            "URL":"https://github.com/jordanclark/cfomdb/blob/master/LICENSE"
+        }
+    ],
+    "private":false,
+    "ignore":[
+        "**/.*",
+        "/test/",
+        "/tests/"
+    ],
+    "scripts":{
+        "postVersion":"package set location='jordanclark/cfomdb#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push --follow-tags"
+    }
+}
