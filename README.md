@@ -9,9 +9,13 @@
 # cfomdb
 OMDb (omdbapi.com) ColdFusion Rest API Client
 
-# Changes
-2019-05-29 Initial release
+## To Install
+Run the following from commandbox:
+`box install cfomdb`
 
-# API documentation
+## Changes
+2019-05-29 Open source release
+
+## API documentation
 http://omdbapi.com/
 
