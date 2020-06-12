@@ -75,7 +75,7 @@ component {
 		if ( out.verb == "GET" ) {
 			out.requestUrl &= this.structToQueryString( out.args, true );
 		} else if ( !structIsEmpty( out.args ) ) {
-			out.body= serializeJSON( out.args );
+			out.body= serializeJSON( out.args, false, false );
 		}
 		out.requestUrl= this.apiUrl & out.requestUrl;
 		this.debugLog( "API: #uCase( out.verb )#: #out.requestUrl#" );
